@@ -79,3 +79,22 @@ gridContainer.addEventListener('click', e => {
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
 });
+
+
+
+/****** Search Function *******/
+
+let searchInput = document.getElementById('search-input');
+
+searchInput.addEventListener('keyup', e => {
+    let inputValue = e.target.value.toLowerCase();
+    let employeeNames = document.querySelectorAll('.name');
+
+    employeeNames.forEach(employeeName => {
+        if (employeeName.textContent.toLowerCase().includes(inputValue)){
+            employeeName.parentNode.parentNode.style.display = 'flex'
+        } else {
+            employeeName.parentNode.parentNode.style.display = 'none'
+        }
+    })
+})

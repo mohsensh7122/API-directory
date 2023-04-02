@@ -21,3 +21,12 @@
     color: $color-tertiary;
     margin-top: 10px;
 }
+
+#search-input {
+    border-radius: 8px;
+    border: 1px solid rgb(218, 211, 211);
+    padding: 15px 20px;
+    margin: 20px auto;
+    width: 350px;
+    display: block;
+}
