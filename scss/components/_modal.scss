@@ -1,0 +1,23 @@
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    position: relative;
+    // The close button
+
+    &-close {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    &-address {
+        margin-bottom: 5px;
+        
+    }
+}

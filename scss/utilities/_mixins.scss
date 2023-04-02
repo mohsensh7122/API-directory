@@ -1,0 +1,10 @@
+@mixin roundy{
+    border-radius: 50%;
+}
+
+@mixin flexy($flex-direction, $justify-content: null, $align-items: null){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

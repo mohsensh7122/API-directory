@@ -1,0 +1,23 @@
+.card {
+    width: 400px;
+    padding: 20px 10px;
+    background-color: $card-background;
+    @include flexy(row, null, center);
+    border-radius: 10px;
+    border: 1px solid lighten($color-tertiary, 20%);
+}
+
+.avatar {
+    @include roundy;
+}
+
+
+.text-container {
+    margin-left: 10px;
+    padding: 10px 10px;
+}
+
+.email, .address {
+    color: $color-tertiary;
+    margin-top: 10px;
+}

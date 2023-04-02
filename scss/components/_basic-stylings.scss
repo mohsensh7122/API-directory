@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: $body-background;
+    font-family: sans-serif;
+
+        height: 100vh;
+        
+        padding: 0 25px;
+}
+
+h1 {
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-size: 20px;
+}
