@@ -83,7 +83,7 @@ h1 {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -113,6 +113,14 @@ h1 {
 }
 .modal-address {
   margin-bottom: 5px;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+.birthday {
+  margin: 10px 0;
 }
 
 .card {

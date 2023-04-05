@@ -6,6 +6,8 @@ const gridContainer = document.querySelector('.grid-container');
 const overlay = document.querySelector('.overlay');
 const modalContainer = document.querySelector('.modal-content');
 const modalClose = document.querySelector('.modal-close');
+let containerIndex = 0;
+
 
 // fetch data from API
 fetch(urlAPI)
@@ -58,12 +60,18 @@ function displayModal(index) {
     <hr />
     <p>${phone}</p>
     <p class="address modal-address">${street.number} ${street.name}, ${state} ${postcode}</p>
-    <p>Birthday:
-    ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+    <p class="birthday">Birthday:
+    ${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}</p>
     </div>
     `;
     overlay.classList.remove("hidden");
     modalContainer.innerHTML = modalHTML;
+
+    
+
+   
+
+
 }
 
 gridContainer.addEventListener('click', e => {
@@ -74,6 +82,10 @@ gridContainer.addEventListener('click', e => {
     const index = card.getAttribute('data-index');
     displayModal(index);
     }
+
+    
+
+    
 });
 
 modalClose.addEventListener('click', () => {
@@ -98,3 +110,4 @@ searchInput.addEventListener('keyup', e => {
         }
     })
 })
+
